@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>
-      Bienvenidos a COTO DIGITAL, al ingresar con tu usuario y contraseña, podes
-      acceder al ALMACEN DIGITAL! Donde podras hacer la lista de tus pedidos!
-    </h1>
-    <h2>Usuario: Nico , Contraseña: 1234</h2>
-    <script src="index.js"></script>
+    <h1>🛒 Carrito de Compras</h1>
+
+    <form id="form-lista">
+      <input
+        type="text"
+        id="nombre-lista"
+        placeholder="Nombre de la lista"
+        required
+      />
+      <button type="submit">Crear nueva lista</button>
+    </form>
+
+    <div id="listas-container"></div>
   </body>
 </html>
